@@ -1,32 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta
+      name="description"
+      content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
+      <a href="https://t.me/s/FigmaToHTML" target="_blank">
+        <img src="img/logo.png" />
+      </a>
+      <div>
+        <p>
+          Данная верстка, была реализована пользователем в рамках обучающего
+          телеграм канал
+          <a href="https://t.me/s/FigmaToHTML" target="_blank"
+            >FIGMA | Макеты для верстки</a
+          >
+        </p>
+        <p>
+          При помощи
+          <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank"
+            >Telegram-бота</a
+          >
+          пользователь получил оплату за верстку этого макета.
+        </p>
+      </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+      <!-- Header -->
+      <header class="header">
+        <nav class="nav container">
+          <a class="logo">
+            <span class="logo-letter">M</span>
+            <span class="logo-text">Mulih</span>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Property</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="user-menu">
+            <a href="#signin" class="btn btn-light user-menu-btn">Sign in</a>
+            <a href="#login" class="btn user-menu-btn">Login</a>
+          </div>
+        </nav>
+      </header>
+      <main class="main-content">
+        <!-- Intro -->
+        <section class="section intro">
+          <div class="container intro-container">
+            <div class="intro-inner">
+              <h1 class="main-title visually-hidden">Mulih - Real estate</h1>
+              <h2 class="section-title intro-title">Real estate</h2>
+              <p class="section-intro intro-subtitle">
+                Let's hunt for your dream residence
+              </p>
+              <p class="section-text intro-text">
+                Explore our range of beautiful properties with the addition of
+                separate accommodation suitable for you.
+              </p>
+              <div class="search-filter">
+                <div class="filter-header">
+                  <div class="filter-header-tab active">Buy</div>
+                  <div class="filter-header-tab">Rent</div>
+                </div>
+                <div class="filter-tabcontent">
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Location</div>
+                    <select
+                      name="location"
+                      id="location"
+                      class="tabcontent-select"
+                    >
+                      <option value="bogor">Bogor, Jawa Barat</option>
+                    </select>
+                  </div>
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Type</div>
+                    <select name="type" id="type" class="tabcontent-select">
+                      <option value="home">Home</option>
+                    </select>
+                  </div>
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Price Range</div>
+                    <select name="price" id="price" class="tabcontent-select">
+                      <option value="200-350">$200-$350</option>
+                    </select>
+                  </div>
+                  <button class="btn tabcontent-btn">Search</button>
+                </div>
+                <div class="filter-tabcontent hide">
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Location</div>
+                    <select
+                      name="location"
+                      id="location"
+                      class="tabcontent-select"
+                    >
+                      <option value="bogor">Bogor, Jawa Barat</option>
+                    </select>
+                  </div>
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Type</div>
+                    <select name="type" id="type" class="tabcontent-select">
+                      <option value="home">Home</option>
+                    </select>
+                  </div>
+                  <div class="tabcontent-block">
+                    <div class="tabcontent-title">Price Range</div>
+                    <select name="price" id="price" class="tabcontent-select">
+                      <option value="200-350">$200-$350</option>
+                    </select>
+                  </div>
+                  <button class="btn tabcontent-btn">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Recommendation -->
+        <section class="section recommendation">
+          <div class="container">
+            <h2 class="section-title">Discover</h2>
+            <p class="section-intro">Best recomendation</p>
+            <div class="section-wrapper">
+              <p class="section-text">
+                Discover our exclusive selection of the finest one-of-a-kind
+                luxury properties architectural masterpieces.
+              </p>
+              <a href="" class="section-link">Learn More</a>
+            </div>
+            <div class="recommendation-list cards">
+              <article class="card">
+                <h3 class="card-title">Perum griya asri</h3>
+                <img
+                  src="img/content/reccommend1.jpg"
+                  alt=""
+                  class="card-img"
+                />
+                <p class="card-location">Bogor, Jawa Barat</p>
+                <div class="card-data">
+                  <p class="card-price">$25,000</p>
+                  <p class="card-area">
+                    <span class="card-footage">360m<sup>2</sup></span>
+                    Living Area
+                  </p>
+                </div>
+                <button class="btn card-btn btn-outline">Send Inquiry</button>
+              </article>
+              <article class="card">
+                <h3 class="card-title">Perum kencana asri</h3>
+                <img
+                  src="img/content/reccommend2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+                <p class="card-location">Bogor, Jawa Barat</p>
+                <div class="card-data">
+                  <p class="card-price">$35,000</p>
+                  <p class="card-area">
+                    <span class="card-footage">360m<sup>2</sup></span>
+                    Living Area
+                  </p>
+                </div>
+                <button class="btn card-btn">Send Inquiry</button>
+              </article>
+              <article class="card">
+                <h3 class="card-title">Perum rakjel elit</h3>
+                <img
+                  src="img/content/reccommend3.jpg"
+                  alt=""
+                  class="card-img"
+                />
+                <p class="card-location">Bogor, Jawa Barat</p>
+                <div class="card-data">
+                  <p class="card-price">$40,000</p>
+                  <p class="card-area">
+                    <span class="card-footage">360m<sup>2</sup></span>
+                    Living Area
+                  </p>
+                </div>
+                <button class="btn card-btn btn-outline">Send Inquiry</button>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Advantages -->
+        <section class="section advantages">
+          <div class="container">
+            <h2 class="section-title">Our advante</h2>
+            <p class="section-intro advantages-intro">
+              Giving you peace of mind
+            </p>
+            <ul class="advantages-list">
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Comfortable</h3>
+                <img src="img/icons/heart.svg" alt="" class="advantage-img" />
+                <p class="advantage-text">
+                  Enjoy lifestyle amenities designed to provide every homeowners
+                  modern comfort, a stone's throw away from schools, churches,
+                  and hospitals.
+                </p>
+              </li>
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Extra security</h3>
+                <img
+                  src="img/icons/shield-done.svg"
+                  alt=""
+                  class="advantage-img"
+                />
+                <p class="advantage-text">
+                  You can connect with potential tenants without having to share
+                  your phone number. We also require all users to register to
+                  validate their legitimacy.
+                </p>
+              </li>
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Luxury</h3>
+                <img src="img/icons/star.svg" alt="" class="advantage-img" />
+                <p class="advantage-text">
+                  Find out how we provide the highest standard of professional
+                  property management to give you all the benefits of property.
+                </p>
+              </li>
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Best price</h3>
+                <img
+                  src="img/icons/ticket-star.svg"
+                  alt=""
+                  class="advantage-img"
+                />
+                <p class="advantage-text">
+                  Not sure what you should be charging for your property? Let us
+                  do the numbers for you—contact us today for a free rental
+                  appraisal on your home.
+                </p>
+              </li>
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Strategic location</h3>
+                <img
+                  src="img/icons/location.svg"
+                  alt=""
+                  class="advantage-img"
+                />
+                <p class="advantage-text">
+                  located in the city center close to the shopping center. Very
+                  good for areas surrounded by international education centers,
+                  start-up office centers.
+                </p>
+              </li>
+              <li class="advantages-item advantage">
+                <h3 class="advantage-title">Efficient</h3>
+                <img src="img/icons/graph.svg" alt="" class="advantage-img" />
+                <p class="advantage-text">
+                  Schedule visits to multiple properties at once in one day
+                  without having to call them one by one. Check everything and
+                  find the best properties for rent
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- About -->
+        <section class="section about">
+          <div class="container">
+            <div class="inner-wrapper">
+              <div class="inner-part section-statistic">
+                <img src="img/content/about-img.png" alt="" class="about-img" />
+                <div class="rating">
+                  <div class="check"></div>
+                  <div class="value">4.8</div>
+                  <div class="stars"></div>
+                  <p class="trust">Trusted on</p>
+                  <p class="reviews-amount">500+ Reviews</p>
+                </div>
+                <div class="products-amount">
+                  <p class="sale-amount">
+                    <span class="value">250+</span>
+                    <span class="desc">Property Sale</span>
+                  </p>
+                  <p class="rent-amount">
+                    <span class="value">550+</span>
+                    <span class="desc">Apartmen Rent</span>
+                  </p>
+                </div>
+              </div>
+              <div class="inner-part section-description">
+                <h2 class="section-title">About us</h2>
+                <p class="section-intro">
+                  How much is your property worth now?
+                </p>
+                <p class="section-text">
+                  We have built our reputation as true local area experts. We
+                  have gained more knowledge about buyer interests, our
+                  neighborhood and the market than any other brand because we
+                  live locally and work for local people.
+                </p>
+                <a href="" class="btn about-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="section testimonials">
+          <div class="container">
+            <h2 class="section-title">Customer testimonial</h2>
+            <div class="section-wrapper">
+              <p class="section-intro">People say about us?</p>
+              <a href="" class="section-link">Learn More</a>
+            </div>
+            <ul class="testimonials-list">
+              <li class="testimonials-item">
+                <article class="testimonial">
+                  <h3 class="testimonial-title">
+                    It proved to be exactly the kind of home we wanted.
+                  </h3>
+                  <p class="testimonial-text">
+                    We wish to express our thanks for your hard work in finding
+                    us a temporary home, which proved to be exactly what we
+                    wanted.
+                  </p>
+                  <div class="testimonial-author">
+                    <h4 class="author-name">Jaydon Aminoff</h4>
+                    <img
+                      src="img/content/testimonial1.png"
+                      alt=""
+                      class="author-photo"
+                    />
+                    <p class="author-profession">UX Designer</p>
+                  </div>
+                </article>
+              </li>
+              <li class="testimonials-item">
+                <article class="testimonial">
+                  <h3 class="testimonial-title">
+                    Nobody knows Portland and the peninsula better than David.
+                  </h3>
+                  <p class="testimonial-text">
+                    My wife and I had a dream of downsizing from our house in
+                    Cape Elizabeth into a small condo closer to where we work
+                    and play in Portland.
+                  </p>
+                  <div class="testimonial-author">
+                    <h4 class="author-name">Alfredo Donin</h4>
+                    <img
+                      src="img/content/testimonial2.png"
+                      alt=""
+                      class="author-photo"
+                    />
+                    <p class="author-profession">UI Designer</p>
+                  </div>
+                </article>
+              </li>
+              <li class="testimonials-item">
+                <article class="testimonial">
+                  <h3 class="testimonial-title">
+                    He keeps his client’s best interests in sharp focus
+                  </h3>
+                  <p class="testimonial-text">
+                    After working with David to sell my home in 2013, I was
+                    convinced that he’s the only realtor I’ll ever need. Since
+                    then, I’ve bought two properties and sold one.
+                  </p>
+                  <div class="testimonial-author">
+                    <h4 class="author-name">Makenna Korsgaard</h4>
+                    <img
+                      src="img/content/testimonial3.png"
+                      alt=""
+                      class="author-photo"
+                    />
+                    <p class="author-profession">UX Researcher</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-left">
+            <a class="logo footer-logo" href="#">
+              <span class="logo-letter">M</span>
+              <span class="logo-text">Mulih</span>
+            </a>
+            <p class="footer-motto">
+              We have built our reputation as true local area experts.
+            </p>
+            <form class="subscribe-form">
+              <h3 class="footer-title">Newsletter</h3>
+              <input
+                class="subscribe"
+                type="email"
+                name="subscribe"
+                id="subscribe"
+                placeholder="Input your email"
+              />
+              <button class="btn submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="footer-middle">
+            <div class="footer-service-nav">
+              <h3 class="footer-title">Service</h3>
+              <ul class="footer-service-list">
+                <li class="footer-item">
+                  <a href="" class="footer-link">About us</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Careers</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Terms & Conditions</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Privacy & Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-community-nav">
+              <h3 class="footer-title">Community</h3>
+              <ul class="footer-community-list">
+                <li class="footer-item">
+                  <a href="" class="footer-link">Find agents</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Lifestyle</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Legal notic</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
+            <h3 class="footer-title">Follow us on</h3>
+            <ul class="socials">
+              <li class="socials-item">
+                <a href="" class="socials-link"
+                  ><img src="img/icons/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="socials-link"
+                  ><img src="img/icons/youtube.svg" alt=""
+                /></a>
+              </li>
+              <li class="socials-item">
+                <a href="" class="socials-link"
+                  ><img src="img/icons/facebook.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-
-</body>
+  </body>
 </html>
