@@ -239,6 +239,7 @@ img {
 }
 
 .nav-item {
+  cursor: pointer;
   transition: all 0.3s linear;
 }
 
@@ -246,6 +247,7 @@ img {
   position: relative;
   padding-bottom: 8px;
   transform: translateY(-8px);
+  cursor: default;
 }
 
 .nav-item.active::after {
@@ -262,6 +264,7 @@ img {
 
 .nav-item.active .nav-link {
   color: var(--primery-green);
+  cursor: default;
 }
 
 .nav-link {
